@@ -9,19 +9,22 @@
     <input type="text" id="t"/>
     <input type="text" id="l"/>
     <input type="text" id="h"/>
-    <select>
+    <select name="" id="Kv">
         <option value="0.75">KV1</option>
-        <option value="0.5">KV2-NT</option>
-        <option value="0.25">KV2</option>
-        <optin value="0.25">KV3</optin>
+        <option value="0.5">KV2</option>
+        <option value="0.25">KV2-NT</option>
+        <option value="0.25">KV3</option>
     </select>
     <button onclick="tinhDiem()">Tính điểm</button>
+    <p id="kq"></p>
     <script>
         function tinhDiem(){
-            alert(document.getElementById("t").value);
-            alert(document.getElementById("l").value);
-            alert(document.getElementById("h").value);
-            alert(document.getElementById("Kv").value);
+            let t = +document.getElementById("t").value;
+            let l = +document.getElementById("l").value;
+            let h = +document.getElementById("h").value;
+            let kv = +document.getElementById("Kv").value;
+            let diem = t + l + h + Kv;
+            document.getElementById('kq').innerHTML = "Tổng điểm là:" + diem;
         }
     </script>
 </body>
