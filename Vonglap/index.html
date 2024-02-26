@@ -9,13 +9,12 @@
     <script>
        let a = prompt ("Nhập vào a:");
        let b = prompt ("Nhập vào b:");
-       for (let i = a; i <= b ;i++ ){
-        if (i % 2 == 0){
-            document.write("<h1>" + i + "</h1>");
-        } else {
-            document.write("<h2>" + i + "</h2>");
-        }
-       }    
+       let tich = 1;
+       while (a<= b){
+        tich = tich * a;
+        a++;
+       }
+       document.write(tich);
     </script>
 </body>
 </html>
