@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //Nhập vào a,b.In chẳn trong h1 và lẻ trong h2 từ a đến b.
+    let a = +prompt("Nhập vào a :");
+    let b = +prompt("Nhập vào b :");
+    for (let i = a; i <= b; i++){
+        if (i % 2 == 0){
+            document.write("<h1>" + i + "</h1>");
+        }  else {
+            document.write("<h2>" + i + "</h2>");
+        }
+    }
+</script>
+</body>
+</html>
